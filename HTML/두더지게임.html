@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./../CSS/두더지게임.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<div class="gameover" id="over">
+    <div class="gameover-wrapper">    
+        <img src="게임오버.png" alt="">
+        <div class="reStart" id="re">
+            <a href=""onClick='top.location!="javascript:location.reload();"'>초기화</a>
+        </div>
+    </div>
+    <div style="position: absolute;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+    background: black;"></div>
+</div>
+<body>
+    <div class="background">
+        <header>
+            <a href=""><img src="./../ASSETS/두더지.png" alt=""> MINI GAME!</a>
+            <div class="time" id="time"><a href="" >시간 : 30초</a></div>
+            <div class="point" id="point"><a href="">점수 : 0</a></div>
+        </header>
+        <div class="background2">
+            <div class="animal-div">
+                <div class="animal">
+                    <img src="./../ASSETS/두더지.png" alt="" class="img" onclick="pointUp();" id="img">
+             <img src="./../ASSETS/풀.png" alt="">
+                </div>
+                <div class="animal">
+                    <img src="./../ASSETS/두더지.png" alt="" class="img" onclick="pointUp();" id="img">
+                     <img src="./../ASSETS/풀.png" alt="">
+                </div>
+                <div class="animal">
+                    <img src="./../ASSETS/두더지.png" alt="" class="img" onclick="pointUp();" id="img">
+                     <img src="./../ASSETS/풀.png" alt="">
+                </div>
+            </div>
+            <div class="animal-div">
+                <div class="animal">
+                    <img src="./../ASSETS/두더지.png" alt="" class="img" onclick="pointUp();" id="img">
+                     <img src="./../ASSETS/풀.png" alt="">
+                </div>
+                <div class="animal">
+                    <img src="./../ASSETS/두더지.png" alt="" class="img" onclick="pointUp();" id="img">
+                     <img src="./../ASSETS/풀.png" alt="">
+                </div>
+                <div class="animal">
+                    <img src="./../ASSETS/두더지.png" alt="" class="img" onclick="pointUp();" id="img">
+                     <img src="./../ASSETS/풀.png" alt="">
+                </div>
+            </div>
+            <div class="animal-div">
+                <div class="animal">
+                    <img src="./../ASSETS/두더지.png" alt="" class="img" onclick="pointUp();" id="img">
+                     <img src="./../ASSETS/풀.png" alt="">
+                </div>
+                <div class="animal">
+                    <img src="./../ASSETS/두더지.png" alt="" class="img" onclick="pointUp();" id="img">
+                     <img src="./../ASSETS/풀.png" alt="">
+                </div>
+                <div class="animal">
+                    <img src="./../ASSETS/두더지.png" alt="" class="img" onclick="pointUp();" id="img">
+                     <img src="./../ASSETS/풀.png" alt="">
+                </div>
+            </div>
+        </div>
+            <div class="under-bar">
+                <button onclick="pictureChange();buttonChange1();" id="button">START!</button>
+            </div>
+    </div> 
+    <script src="../JS/두더지게임.js"></script>  
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script> 
+</body>
+</html>
