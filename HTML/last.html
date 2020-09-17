@@ -8,14 +8,19 @@
 </head>
 <body>
     <form action="">
-        <div id="start-word">
+        
+        <h1 id="word">
+            <span style="color:#FFD2BB;">끝</span>
+            <span style="color:#CEFFF0 ;">말</span>
+            <span style="color:#F9C2EA ;">잇</span>
+            <span style="color:#C2D5F9 ;">기</span>
+        </h1>
+    <div id="start-word">
             
-        </div>
-        <h1 id="word">끝말잇기</h1>
-
+    </div>
         <div class="current-word">
             <!-- <input autocomplete="off" type="text" id="first-list" placeholder="처음 단어 입력"> -->
-            <input autocomplete="off" type="text" name="" id="in"  placeholder="입력..." class="gameover-input"/>
+            <input autocomplete="off" type="text" name="" id="in"  placeholder="입력..." class="gameover-input" onkeyup="noSpace(this);" onchange="noSpace(this);"/>
             <button id="btn">click</button>
             <span id="out"></span>
         </div>
