@@ -4,13 +4,13 @@ let btn = document.getElementById('btn');
 let out = document.getElementById('out');
 let list = document.getElementById('list');
 let array = [];
-let startWord = ['기차', '사과', '윤석훈', '돼지', '노트북', '시나브로', '동아리' , '학교', '기숙사', '집'];
+let startWord = ['기차', '사과', '끝말잇기', '돼지', '노트북', '시나브로', '동아리' , '학교', '기숙사', '과일'];
 let startSize = startWord.length;
 let size = Math.floor(Math.random() * startSize);
 let randomWord =  startWord[size];
 let randomSize = randomWord.length - 1;
 let start = document.getElementById('start-word');
-// let consonant = ['ㄱ','ㄴ','ㄷ','ㄹ','ㅁ','ㅂ','ㅅ','ㅇ','ㅈ','ㅊ','ㅋ','ㅌ','ㅍ','ㅎ','ㅏ','ㅑ','ㅓ','ㅕ','ㅗ','ㅛ','ㅜ','ㅠ','ㅡ','ㅣ','ㄲ','ㅃ','ㅉ','ㄸ'];
+
 start.innerHTML = randomWord;
 btn.addEventListener('click', function(e) {
    e.preventDefault();
@@ -56,5 +56,19 @@ function noSpace(obj){
       return false;
    }
 }
+let nav = document.querySelector('.nav-modal')
+let navImg = document.querySelector('.nav-img');
+let closeButton = document.getElementById('close');
+let closeModal = document.getElementById('empty');
 
-
+function toggleModal() {
+   nav.classList.toggle("show-nav");
+}
+function navClick(event) {
+   if(event.target === nav) {
+      toggleModal();
+   }
+}
+ navImg.addEventListener("click", toggleModal);
+//  closeButton.addEventListener("click", toggleModal);
+ closeModal.addEventListener("click", toggleModal)
