@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/BallPuzzle.css">
+    <link rel="stylesheet" href="BallPuzzle.css">
     <title>Ball Puzzle</title>
 </head>
 <body>
@@ -13,9 +13,16 @@
             <p class="titleAssistant">Moving the ball!!</p>
         </div>
     </header>
+    <div id="completeModal">
+        <div id="modalOverlay"></div>
+        <div class="completeChange">
+            <button class="exitButton" onclick="exitModal();" type="button"><img src="exit.png" alt="exit"></button>
+            ~성공~
+        </div>
+    </div>
     <section class="allButton">
-        <button class="reset" type="button"> Reset </button>
-        <button class="changeRound" type="button">Change Round</button>
+        <button class="resetButton" onclick="resetButtonClick();" type="button"> Reset </button>
+        <button class="changeRoundButton" onclick="changeRoundButtonClick();" type="button">Change Round</button>
     </section>
     <section class="container">
             <div class="basketTop">
@@ -94,13 +101,11 @@
                     <div class="ball mint"></div>
                 </div>
                 <div id="thirteenBottle" class="ballBasket">
-                    
                 </div>
                 <div id="fourteenBottle" class="ballBasket">
-                  
                 </div>
             </div>
     </section>
-    <script src="../JS/BallPuzzle.js"></script>
+    <script src="./BallPuzzle.js"></script>
 </body>
 </html>
