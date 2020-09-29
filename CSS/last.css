@@ -67,35 +67,7 @@ li{
     width: 80%;
     padding-top: 50px;
 }
-/*모달창*/
-.gameover-modal{
-    position: fixed;
-    display: none;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    transform: scale(1.1);
-    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, ;
-} 
-.modal-content{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    padding:  1rem 1.15rem;
-    width: 500px;
-    height: 300px;
-    border-radius: 0.5rem;
-}
-.show-modal{
-    opacity: 1;
-    visibility: visible;
-    transform: scale(1.0);
-    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
-}
+
 .head{
     display: flex;
     justify-content: center;
@@ -136,4 +108,107 @@ li{
     font-weight: bold;
     padding-top: 30px;
     padding-bottom:130px;
+}
+
+.top{
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+/*모달창*/
+.gameover-modal{
+    position: fixed;
+    display: none;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, ;
+} 
+.modal-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding:  1rem 1.15rem;
+    width: 500px;
+    height: 300px;
+    border-radius: 0.5rem;
+}
+.show-modal{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+.nav-modal{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+.nav-content{
+    position: absolute;
+    top: 50%;
+    left: 9%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    /* padding-left: 1rem; */
+    width: 350px;
+    height: 100%;
+}
+.show-nav{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+.game-list{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding-left: 30px;
+}
+.game-list span{
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.empty{
+    width: 80%;
+    height: 100%;
+    float: right;
+}
+.nav-img{
+    cursor: pointer;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+#close{
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+}
+.game-list{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.game-list:nth-of-type(2){
+    background-color: rgb(218, 216, 216);
+}
+.game-list:nth-of-type(4){
+    background-color: rgb(218, 216, 216);
 }

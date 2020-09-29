@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,18 +8,42 @@
 </head>
 <body>
     <form action="">
-        
+        <div class="top">
+            <img src="../ASSETS/nav.png" alt="nav" class="nav-img">
+            <div class="nav-modal" id="nav-modal">
+                <!--<div class="close">
+                    <img src="../ASSETS/close.png" alt="close-button" id="close">
+                </div>-->
+                <div class="empty" id="empty">
+                        <!--모달창을 사라지게하기 위한 div-->
+                </div>
+                <div class="nav-content">
+                        <div class="game-list">
+                            <span>Home</span>
+                        </div>
+                        <div class="game-list">
+                            <span>ballpuzzle Game</span>
+                        </div>
+                        <div class="game-list">
+                            <span>Catch Game</span>
+                        </div>
+                        <div class="game-list">
+                            <span>lastletter</span>
+                        </div>
+                </div>
+            </div>
         <h1 id="word">
             <span style="color:#FFD2BB;">끝</span>
             <span style="color:#CEFFF0 ;">말</span>
             <span style="color:#F9C2EA ;">잇</span>
             <span style="color:#C2D5F9 ;">기</span>
         </h1>
+        <span style="color: #FFF;">a</span>
+    </div>
     <div id="start-word">
             
     </div>
         <div class="current-word">
-            <!-- <input autocomplete="off" type="text" id="first-list" placeholder="처음 단어 입력"> -->
             <input autocomplete="off" type="text" name="" id="in"  placeholder="입력..." class="gameover-input" onkeyup="noSpace(this);" onchange="noSpace(this);"/>
             <button id="btn">click</button>
             <span id="out"></span>
