@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>두더지 잡기</title>
     <link rel="stylesheet" href="./../CSS/두더지게임.css">
+    <link rel="stylesheet" href="../CSS/globalModal.css">
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 <div class="gameover" id="over">
@@ -21,6 +22,25 @@
     background: black;"></div>
 </div>
 <body>
+    <img src="../ASSETS/nav.png" alt="nav" class="nav-img">
+            <div class="nav-modal" id="nav-modal">
+                <div class="empty" id="empty">
+                </div>
+                <div class="nav-content">
+                        <a href="메인메뉴.html" class="game-list">
+                            <span>Home</span>
+                        </a>
+                        <a href="BallPuzzle.html" class="game-list">
+                            <span>ballpuzzle Game</span>
+                        </a>
+                        <a href="두더지게임.html" class="game-list">
+                            <span>Catch Game</span>
+                        </a>
+                        <a href="last.html" class="game-list">
+                            <span>lastletter</span>
+                        </a>
+                </div>
+            </div>
     <div class="background">
         <header>
             <a href="./main.html"><img src="./../ASSETS/두더지.png" alt=""> MAIN MENU</a>
@@ -77,5 +97,6 @@
     </div> 
     <script src="../JS/두더지게임.js"></script>  
     <script src="http://code.jquery.com/jquery-latest.min.js"></script> 
+    <script src="../JS/globalModal.js"></script>
 </body>
 </html>

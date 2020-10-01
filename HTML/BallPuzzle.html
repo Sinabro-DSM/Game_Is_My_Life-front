@@ -3,11 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="BallPuzzle.css">
-    <title>Ball Puzzle</title>
+    <link rel="stylesheet" href="./../CSS/BallPuzzle.css">
+    <link rel="stylesheet" href="./../CSS/globalModal.css">
+    <title>공 옮기기 게임</title>
 </head>
 <body>
+    <img src="../ASSETS/nav.png" alt="nav" class="nav-img">
+            <div class="nav-modal" id="nav-modal">
+                <div class="empty" id="empty">
+                </div>
+                <div class="nav-content">
+                        <a href="메인메뉴.html" class="game-list">
+                            <span>Home</span>
+                        </a>
+                        <a href="BallPuzzle.html" class="game-list">
+                            <span>ballpuzzle Game</span>
+                        </a>
+                        <a href="두더지게임.html" class="game-list">
+                            <span>Catch Game</span>
+                        </a>
+                        <a href="last.html" class="game-list">
+                            <span>lastletter</span>
+                        </a>
+                </div>
+            </div>
     <header>
+        
         <div>
             <h1 class="gameTitle">Ball Puzzle</h1>
             <p class="titleAssistant">Moving the ball!!</p>
@@ -106,6 +127,7 @@
                 </div>
             </div>
     </section>
-    <script src="./BallPuzzle.js"></script>
+    <script src="../JS/BallPuzzle.js"></script>
+    <script src="../JS/globalModal.js"></script>
 </body>
 </html>
